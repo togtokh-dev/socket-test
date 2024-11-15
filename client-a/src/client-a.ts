@@ -19,7 +19,7 @@ interface IncomingMessage {
   message: string; // Message content
 }
 
-const ws = new WebSocket("ws://10.21.67.120:8080");
+const ws = new WebSocket("ws://localhost:8080");
 
 ws.on("open", () => {
   // Register the client with the server
@@ -29,6 +29,7 @@ ws.on("open", () => {
 
   // Send a message to Client-B via Server-C
   setTimeout(() => {
+    console.log("object");
     const outgoingMessage: OutgoingMessage = {
       type: "message",
       client: "a",
