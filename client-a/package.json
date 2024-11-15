@@ -1,7 +1,7 @@
 {
   "name": "client-a",
   "version": "1.0.0",
-  "main": "dist/client-a.js",
+  "main": "dist/client-b.js",
   "scripts": {
     "start": "tsc && node dist/client-a.js"
   },
@@ -9,6 +9,7 @@
     "ws": "^8.12.0"
   },
   "devDependencies": {
+    "@types/ws": "^8.5.13",
     "typescript": "^5.3.3"
   }
 }
